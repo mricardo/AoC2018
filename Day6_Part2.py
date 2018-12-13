@@ -2,8 +2,8 @@ import sys
 
 def read(filename):
     coords = []
-    max_x = None
-    max_y = None
+    max_x = max_y = None
+    
     with open(filename) as f:
         for line in f:
             comma = line.find(',')

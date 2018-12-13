@@ -2,8 +2,8 @@ import sys
 
 def read(filename):
     coords = []
-    max_x = None
-    max_y = None
+    max_x = max_y = None
+    
     with open(filename) as f:
         for line in f:
             comma = line.find(',')
@@ -44,7 +44,7 @@ def run_algo(coords, max_x, max_y):
         count_coords[c[0]] = 1
     
     left = right = top = bottom = []
-    
+
     y = 0
     while y < max_y:
         x = 0
